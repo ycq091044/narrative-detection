@@ -1,8 +1,11 @@
 # Narrative Detection Source Code (python3.7)
 
+### A small demo
+Check `Synthetic_data_code.ipynb`: a demo jupyter notebook on synthetic dataset (Hawaii Earthquake)!
+
+
 ### Content
 
-- `Synthetic_data_code.ipynb`: a demo jupyter notebook on synthetic dataset (Hawaii Earthquake)
 - `/src/*`:  source code
 - `/sample/*`:  a real-world twitter dataset
 
