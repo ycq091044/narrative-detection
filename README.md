@@ -84,5 +84,5 @@ keyword100
 ```
 
 ### Note
-The software are totally based on "keyword similarity", "user dependency" and "user retweeting activity", so that the larger uthreshold (popular users) and kthreshold (long tweets) are, the better seperation it will give.
+The software are totally based on "keyword similarity", "user dependency" and "user retweeting activity", so that the larger uthreshold (popular users) and kthreshold (long tweets) are, the better seperation it will give. `fastmode` is actually another way to compute message similarity, feel free to try.
 
