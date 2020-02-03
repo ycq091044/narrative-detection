@@ -11,7 +11,7 @@ Check `Synthetic_data_code.ipynb`: a demo jupyter notebook on synthetic dataset 
 
 
 ### Run synthetic dataset
-Before running, please ```mkdir label``` first on the same folder.
+Before running, please ```mkdir label; mkdir output``` first on the same folder.
 
 ```text
 python run.py
