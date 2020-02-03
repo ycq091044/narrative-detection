@@ -55,7 +55,7 @@ def textProcess(data, pathK, kthreshold, uthreshold):
     keyword = []
     if pathK == 'N':
         # get stopwords
-        with open('sample/stopwords_en.txt', 'r') as infile:
+        with open('../sample/stopwords_en.txt', 'r') as infile:
             for word in infile.readlines():
                 stopwords.append(word[:-1])
 
