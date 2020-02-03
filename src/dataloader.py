@@ -60,6 +60,7 @@ def getData(pathD, pathK, kthreshold, uthreshold):
         return hawaiiData()
     else:
         data = pd.read_csv(pathD, sep='\t')
+        print ('{} tweets and {} users'.format(len(data), len(data.name.unique())))
         return textProcess(data, pathK, kthreshold, uthreshold)
 
 if __name__ ==  '__main__':
