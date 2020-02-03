@@ -73,30 +73,32 @@ def showNarrative(tweetMap, data, M, N):
     delta = 0.01
     sigma = 3
 
-    for i in range(N):
-        print ('Narrative', i+1)
-        print ('---------------------------')
-        tempMap = []
+    with open('../output/output.narrative', 'w') as outfile:
+        print ('N = {}'.format(N))
+        for i in range(N):
+            print ('Narrative', i+1); print ('Narrative', i+1, file=outfile)
+            print ('---------------------------'); print ('---------------------------', file=outfile)
+            tempMap = []
 
-        for tweet in data.postTweet:
-            tempMap.append(M[tweetMap[tweet], i])
-        tempMap = np.argsort(-np.array(tempMap))
+            for tweet in data.postTweet:
+                tempMap.append(M[tweetMap[tweet], i])
+            tempMap = np.argsort(-np.array(tempMap))
 
-        keyPocket = set()
-        s = 0
+            keyPocket = set()
+            s = 0
 
-        for i, (tweet, postTweet) in enumerate(data[['rawTweet', 'postTweet']].iloc[tempMap].values):
-            if s >= sigma:
-                break
-            # jaccard
-            key = postTweet.split()
-            if len(set(key) - keyPocket) / (len(keyPocket) + 1) >= delta:
-                print (tweet)
-                print ('-------------')
-                s += 1
-            for item in key:
-                keyPocket.add(item)
-        print ()
+            for i, (tweet, postTweet) in enumerate(data[['rawTweet', 'postTweet']].iloc[tempMap].values):
+                if s >= sigma:
+                    break
+                # jaccard
+                key = postTweet.split()
+                if len(set(key) - keyPocket) / (len(keyPocket) + 1) >= delta:
+                    print (tweet); print (tweet, file=outfile)
+                    print ('-------------'); print ('-------------', file=outfile)
+                    s += 1
+                for item in key:
+                    keyPocket.add(item)
+            print (); print(file=outfile)
 
 def run(pathA=args.pathA, pathD=args.pathD, pathK=args.pathK, fastmode=args.fastmode, \
     N=args.N, l1=args.l1, l2=args.l2, epochs=args.epochs, K=args.process):
