@@ -107,13 +107,13 @@ def run(pathA=args.pathA, pathD=args.pathD, pathK=args.pathK, fastmode=args.fast
 
     # pre-processing
     data = getData(pathD=args.pathD, pathK=args.pathK, kthreshold=args.kthreshold, uthreshold=args.uthreshold)
-    A = Smodule(data.name.unique().tolist(), pathA=args.pathA)
+    # A = Smodule(data.name.unique().tolist(), pathA=args.pathA)
     userMap, tweetMap, userKey, tweetKey, userTweet, userTweet2 = getKeyMatrix(data)
     if fastmode == 'N':
         userTweet = Mmodule(userTweet, tweetKey, K)
         X = A @ userTweet
     elif fastmode == 'Y':
-        X = A @ userTweet2
+        X = userTweet2
 
     if 'label' in data:
         for mode in ['NMF', 'NMTF', 'BSMF']:
