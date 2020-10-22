@@ -1,6 +1,22 @@
 # Narrative Detection Source Code (python3.7)
 
+---
+
+<table> <tr> <td> <a><img src="demo1.png"></a> </td> <td> <a><img src="demo2.png"></a> </td> </tr> </table>
+
+
+
+The full paper has been accepted by ASONAM2020.
+
+> @article{yang2020disentangling,
+>   title={Disentangling Overlapping Beliefs by Structured Matrix Factorization},
+>   author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, Huajie and Liu, Dongxin and Liu, Shengzhong and Wang, Tianshi and Abdelzaher, Tarek F},
+>   journal={arXiv preprint arXiv:2002.05797},
+>   year={2020}
+> }
+
 ### A small demo
+
 Check `Synthetic_data_code.ipynb`: a demo jupyter notebook on synthetic dataset (Hawaii Earthquake)!
 
 
