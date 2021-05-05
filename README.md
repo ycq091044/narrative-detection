@@ -1,4 +1,4 @@
-# Narrative Detection Source Code (python3.7)
+# Source Code (python3.7) for Narrative Detection ASONAM'20 Paper
 
 <table> <tr> <td> <a><img src="demo1.png"></a> </td> <td> <a><img src="demo2.png"></a> </td> </tr> </table>
 
@@ -8,10 +8,22 @@ The full paper has been accepted by ASONAM2020.
 
 ```bibtex
 @article{yang2020disentangling,
-title={Disentangling Overlapping Beliefs by Structured Matrix Factorization},
-author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, Huajie and Liu, Dongxin and Liu, Shengzhong and Wang, Tianshi and Abdelzaher, Tarek F},
-journal={arXiv preprint arXiv:2002.05797},
-year={2020}
+    title={Disentangling Overlapping Beliefs by Structured Matrix Factorization},
+    author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, 
+        Huajie and Liu, Dongxin and Liu, Shengzhong and Wang, Tianshi and Abdelzaher, Tarek F},
+    journal={arXiv preprint arXiv:2002.05797},
+    year={2020}
+}
+
+@article{yang2020hierarchical,
+    title={Hierarchical Overlapping Belief Estimation by Structured Matrix Factorization},
+    author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, 
+        Huajie and Liu, Dongxin and Liu, Shengzhong and Wang, Tianshi and Abdelzaher, Tarek F},
+    booktitle={2020 IEEE/ACM International Conference on Advances in Social Networks 
+        Analysis and Mining (ASONAM)},
+    pages={81--88},
+    year={2020},
+    organization={IEEE}
 }
 ```
 
