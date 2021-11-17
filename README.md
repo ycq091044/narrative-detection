@@ -7,7 +7,6 @@
 The full paper has been accepted by ASONAM2020.
 
 ```bibtex
-
 @article{yang2020hierarchical,
     title={Hierarchical Overlapping Belief Estimation by Structured Matrix Factorization},
     author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, 
