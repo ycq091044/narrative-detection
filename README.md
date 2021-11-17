@@ -7,14 +7,6 @@
 The full paper has been accepted by ASONAM2020.
 
 ```bibtex
-@article{yang2020disentangling,
-    title={Disentangling Overlapping Beliefs by Structured Matrix Factorization},
-    author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, 
-        Huajie and Liu, Dongxin and Liu, Shengzhong and Wang, Tianshi and Abdelzaher, Tarek F},
-    journal={arXiv preprint arXiv:2002.05797},
-    year={2020}
-}
-
 @article{yang2020hierarchical,
     title={Hierarchical Overlapping Belief Estimation by Structured Matrix Factorization},
     author={Yang, Chaoqi and Li, Jinyang and Wang, Ruijie and Yao, Shuochao and Shao, 
